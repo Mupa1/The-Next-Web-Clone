@@ -44,6 +44,7 @@ header nav .top-nav {
   height: 48px;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 header nav .top-nav .logo {
@@ -139,12 +140,6 @@ header nav .bottom-nav a {
 
 .landing-banners .banner .banner-caption span a {
   color: gray;
-}
-
-/* Advert Section */
-.advert {
-  height: 249px;
-  margin: 50px 20px;
 }
 
 /* Latest News Section */
