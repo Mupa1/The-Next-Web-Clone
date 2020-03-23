@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: auto;
+  background: #f8f8f8;
+  color: #555;
+}
+
 main > div:not(.landing-banners) {
   padding: 0 20px;
 }
@@ -30,10 +38,45 @@ header {
 
 header nav .top-nav {
   height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .top-nav .logo {
+  height: 100%;
+}
+
+header nav .top-nav .top-nav-links {
+  height: 100%;
+  display: flex;
+}
+
+header nav .top-nav .top-nav-links li {
+  padding: 0 15px;
+  border-left: 1px solid lightgray;
+  line-height: 48px;
+}
+
+header nav .top-nav .top-nav-links li a .fa-search {
+  color: lightgray;
+  font-size: 110%;
+}
+
+header nav .top-nav .top-nav-links li a .fa-bars {
+  color: #f42;
+  font-size: 130%;
 }
 
 header nav .bottom-nav {
   height: 60px;
+  background-color: #ffd633;
+  text-align: center;
+}
+
+header nav .bottom-nav a {
+  font-size: 70%;
+  color: #000;
+  line-height: 55px;
 }
 
 /* Landing Banner Section */
@@ -42,6 +85,7 @@ header nav .bottom-nav {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 144px);
   margin-top: 78px;
+  padding: 4px;
 }
 
 .landing-banners .banner {
