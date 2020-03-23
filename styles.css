@@ -15,6 +15,10 @@ body {
   color: #555;
 }
 
+i {
+  vertical-align: middle;
+}
+
 main > div:not(.landing-banners) {
   padding: 0 20px;
 }
@@ -83,13 +87,58 @@ header nav .bottom-nav a {
 .landing-banners {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 144px);
+  grid-template-rows: repeat(3, auto);
   margin-top: 78px;
-  padding: 4px;
+  row-gap: 8px;
+  min-height: 90vh;
+}
+
+.landing-banners .banner1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/hacker-796x417.png");
+}
+
+.landing-banners .banner2 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/amazon-boxes-prime-2017-796x448.jpg");
+}
+
+.landing-banners .banner3 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-796x417.png");
 }
 
 .landing-banners .banner {
-  padding: 4px;
+  background-color: black;
+  background-size: cover;
+  background-position: 0 -60px;
+}
+
+.landing-banners .banner .banner-caption {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%);
+  padding: 14px 12px;
+}
+
+.landing-banners .banner .banner-caption a {
+  color: #fff;
+}
+
+.landing-banners .banner h2 {
+  font-size: 130%;
+}
+
+.landing-banners .banner span {
+  color: gray;
+  font-size: 80%;
+}
+
+.landing-banners .banner span i {
+  font-size: 120%;
+}
+
+.landing-banners .banner .banner-caption span a {
+  color: gray;
 }
 
 /* Advert Section */
