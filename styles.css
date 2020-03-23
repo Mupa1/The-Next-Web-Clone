@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+main > div:not(.landing-banners) {
+  padding: 0 20px;
+}
+
+.light {
+  background-color: #ccc;
+}
+
+.dark {
+  background-color: #555;
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  height: 108px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+header nav .top-nav {
+  height: 48px;
+}
+
+header nav .bottom-nav {
+  height: 60px;
+}
+
+/* Landing Banner Section */
+.landing-banners {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 144px);
+  margin-top: 78px;
+}
+
+.landing-banners .banner {
+  padding: 4px;
+}
+
+/* Advert Section */
+.advert {
+  height: 249px;
+  margin: 50px 20px;
+}
+
+/* Latest News Section */
+.latest-news .news-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 93px);
+}
+
+.latest-news .news-box .news {
+  padding: 8px;
+}
+
+/* Latest Funding Section */
+.latest-funding .funding-header {
+  height: 154px;
+  margin-bottom: 24px;
+}
+
+.latest-funding .funding-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 282px);
+}
+
+.latest-funding .funding-box .fund {
+  padding: 8px;
+}
+
+/* Most Popular Section */
+.most-popular {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 644px);
+}
+
+.most-popular .popular {
+  padding: 8px;
+}
+
+/* Latest Deals  */
+.latest-deals .deals-heading {
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.latest-deals .deals-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 88px);
+}
+
+.latest-deals .deals-box .deals {
+  padding: 8px;
+}
+
+/* Footer Section */
+footer {
+  height: 307px;
+}
+
+footer .top-footer {
+  height: 185px;
+}
+
+footer .bottom-footer {
+  height: 122px;
+}
