@@ -92,6 +92,7 @@ header nav .bottom-nav a {
   margin-top: 78px;
   row-gap: 8px;
   min-height: 90vh;
+  padding: 4px;
 }
 
 .landing-banners .banner1 {
@@ -110,6 +111,7 @@ header nav .bottom-nav a {
   background-color: black;
   background-size: cover;
   background-position: 0 -60px;
+  margin: 0 4px;
 }
 
 .landing-banners .banner .banner-caption {
