@@ -19,6 +19,10 @@ i {
   vertical-align: middle;
 }
 
+a {
+  color: #555;
+}
+
 main > div:not(.landing-banners) {
   padding: 0 20px;
 }
@@ -33,6 +37,10 @@ main > div:not(.landing-banners) {
 
 .section-heading a:hover {
   color: #000;
+}
+
+.blocked-font {
+  font-family: Rajdhani, Arial, Helvetica, sans-serif;
 }
 
 .light {
@@ -246,19 +254,86 @@ header nav .bottom-nav a {
 }
 
 /* Latest Funding Section */
+.latest-funding {
+  line-height: 30px;
+}
+
 .latest-funding .funding-header {
-  height: 154px;
-  margin-bottom: 24px;
+  margin: 50px 0 20px;
+}
+
+.latest-funding .fund-heading-links {
+  font-size: 80%;
 }
 
 .latest-funding .funding-box {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 282px);
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
 }
 
 .latest-funding .funding-box .fund {
-  padding: 8px;
+  position: relative;
+}
+
+.latest-funding .funding-box .fund .fund-title {
+  background-color: #f42;
+  padding: 6px 6px 6px 84px;
+  color: #fff;
+}
+
+.latest-funding .funding-box .fund .fund-title .title-link {
+  color: #fff;
+}
+
+.latest-funding .funding-box .fund img {
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.latest-funding .funding-box .fund .box1 {
+  padding: 10px 16px 10px 84px;
+  line-height: 20px;
+  background: rgba(255, 68, 34, 0.08);
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box1 h3 a {
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box1 h5 a {
+  color: gray;
+}
+
+.latest-funding .funding-box .fund .box2 {
+  padding: 11px 16px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  background-color: rgba(255, 68, 34, 0.02);
+  font-size: 80%;
+}
+
+.latest-funding .funding-box .fund .box2 i {
+  color: #000;
+  padding-right: 20px;
+}
+
+.latest-funding .funding-box .fund .box2 a:hover {
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box3 {
+  padding: 10px 16px 16px;
+  background-color: rgba(255, 68, 34, 0.02);
+  font-size: 75%;
+  line-height: 20px;
+}
+
+.latest-funding .funding-box .fund .box3 span {
+  color: gray;
 }
 
 /* Most Popular Section */
