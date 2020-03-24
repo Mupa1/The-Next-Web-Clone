@@ -23,6 +23,18 @@ main > div:not(.landing-banners) {
   padding: 0 20px;
 }
 
+.fa-chevron-right {
+  font-size: 80%;
+}
+
+.section-heading a {
+  color: #f42;
+}
+
+.section-heading a:hover {
+  color: #000;
+}
+
 .light {
   background-color: #ccc;
 }
@@ -148,11 +160,89 @@ header nav .bottom-nav a {
 .latest-news .news-box {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 93px);
+  grid-template-rows: repeat(8, auto);
+  row-gap: 12px;
+}
+
+.latest-news .section-heading {
+  padding: 40px 0 20px;
 }
 
 .latest-news .news-box .news {
-  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr;
+  column-gap: 12px;
+}
+
+.latest-news .news-box .news span {
+  font-size: 70%;
+  line-height: 12px;
+  color: gray;
+}
+
+.latest-news .news-box .news span a {
+  color: gray;
+}
+
+.latest-news .news-box .news h4 a {
+  color: #000;
+  font-size: 88%;
+  line-height: 18px;
+}
+
+.latest-news .news-box .news span a:hover {
+  color: #555;
+}
+
+.latest-news .news-box .news h4 a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-news .news-box .news .news-img {
+  height: 72px;
+  width: 72px;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.latest-news .news-box .news .news1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark-516x270.jpg");
+}
+
+.latest-news .news-box .news .news2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/zoom-meeting-419x270.png");
+}
+
+.latest-news .news-box .news .news3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/header-image-iphone-camera-stablisation-516x270.png");
+}
+
+.latest-news .news-box .news .news4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/call-for-code-480x270.jpg");
+}
+
+.latest-news .news-box .news .news5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Coronavirus-Spotify-516x270.jpg");
+}
+
+.latest-news .news-box .news .news6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design34-516x270.png");
+}
+
+.latest-news .news-box .news .news7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/square_logo_uk-516x270.png");
+}
+
+.latest-news .news-box .news .news8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/softbank.jpg");
+}
+
+.latest-news .point-icon::after {
+  content: "\B7";
 }
 
 /* Latest Funding Section */
