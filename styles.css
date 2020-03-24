@@ -43,6 +43,10 @@ main > div:not(.landing-banners) {
   font-family: Rajdhani, Arial, Helvetica, sans-serif;
 }
 
+.point-icon::after {
+  content: "\B7";
+}
+
 .light {
   background-color: #ccc;
 }
@@ -249,10 +253,6 @@ header nav .bottom-nav a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/softbank.jpg");
 }
 
-.latest-news .point-icon::after {
-  content: "\B7";
-}
-
 /* Latest Funding Section */
 .latest-funding {
   line-height: 30px;
@@ -340,11 +340,171 @@ header nav .bottom-nav a {
 .most-popular {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 644px);
+  grid-template-rows: repeat(8, auto);
+  gap: 30px;
 }
 
-.most-popular .popular {
-  padding: 8px;
+.most-popular .popular .lg-img {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  display: block;
+  width: 100%;
+  height: 210px;
+  margin: 10px auto;
+  margin-bottom: 2px;
+}
+
+.most-popular .popular .lg-img-caption {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%);
+  padding: 14px 12px;
+  line-height: 24px;
+}
+
+.most-popular .popular .lg-img-caption .white {
+  color: #fff;
+}
+
+.most-popular .popular .lg-img-caption .name-time {
+  font-size: 80%;
+  color: gray;
+}
+
+.most-popular .popular .lg-img-caption h2 {
+  font-size: 120%;
+}
+
+.most-popular .popular .lg-img-caption h2 .white:hover {
+  text-decoration: underline;
+}
+
+.most-popular .popular .lg-img-caption span .name:hover {
+  color: #fff;
+}
+
+.most-popular .popular .lg-img .lg-img-caption span .name {
+  color: gray;
+}
+
+.most-popular .popular .lg-img .lg-img-caption span .name:hover {
+  color: #fff;
+}
+
+.most-popular .latest-box {
+  line-height: 20px;
+  padding-left: 14px;
+  display: flex;
+  max-height: 95px;
+  overflow: hidden;
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.most-popular .latest-box h5 {
+  color: #f42;
+  padding-top: 10px;
+}
+
+.most-popular .latest-box h4 .details {
+  color: #f42;
+  font-size: 90%;
+}
+
+.most-popular .latest-box h4 .details:hover {
+  text-decoration: underline;
+}
+
+.most-popular .popular .sml-img {
+  height: 96px;
+  width: 96px;
+  background-color: #000;
+  background-size: cover;
+  flex: 0 0 96px;
+}
+
+.most-popular .popular .apps {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-368x276.jpg");
+}
+
+.most-popular .popular .apps-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Smithsonian.jpg");
+}
+
+.most-popular .popular .gear {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/fujifilm-x-t4-camera-mirrorless-368x276.jpg");
+}
+
+.most-popular .popular .gear-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2014/07/Wifi-730x279.jpg");
+}
+
+.most-popular .popular .tech {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/lab-mouse-368x276.jpg");
+}
+
+.most-popular .popular .tech-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/farmers-market-1329008_1280.jpg");
+}
+
+.most-popular .popular .creative {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg");
+}
+
+.most-popular .popular .creative-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04.png");
+}
+
+.most-popular .popular .podium {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/ai-ownership-368x276.png");
+}
+
+.most-popular .popular .podium-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/big_survival_base_3.png");
+}
+
+.most-popular .popular .insight {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
+}
+
+.most-popular .popular .insight-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/vp01-2_gliding_home.jpg");
+}
+
+.most-popular .popular .launch {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
+}
+
+.most-popular .popular .launch-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed.jpg");
+}
+
+.most-popular .popular .distract {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
+}
+
+.most-popular .popular .distract-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Giphy_Jif-Featured.jpg");
+}
+
+.most-popular .popular .popular-list li {
+  margin-left: 16px;
+  padding: 5px 0;
+  font-size: 85%;
+  border-bottom: 1px solid #ccc;
+}
+
+.most-popular .popular .popular-list li::before {
+  color: #f42;
+  content: "\2022";
+  font-size: 120%;
+  margin: auto 10px auto -16px;
+}
+
+.most-popular .popular .popular-list .item:hover {
+  color: #000;
 }
 
 /* Latest Deals  */
