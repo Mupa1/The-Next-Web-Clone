@@ -334,6 +334,7 @@ header nav .bottom-nav #ad-link {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, auto);
   gap: 30px;
+  margin-top: 30px;
 }
 
 .most-popular .popular .lg-img {
@@ -587,11 +588,11 @@ header nav .bottom-nav #ad-link {
 
 /* Footer Section */
 footer {
-  height: 307px;
+  height: 283px;
 }
 
 footer .top-footer {
-  height: 185px;
+  height: 161px;
   background-color: #131313;
   text-align: center;
   padding: 35px 0;
@@ -612,6 +613,10 @@ footer .top-footer nav ul {
 footer .top-footer nav .icons .icon {
   flex: 1;
   font-size: 130%;
+}
+
+footer .top-footer nav .icons .rss {
+  display: none;
 }
 
 footer .top-footer nav .other-links {
@@ -664,4 +669,25 @@ footer .bottom-footer .heart {
 footer .bottom-footer .footer-img {
   display: inline-block;
   height: 9px;
+}
+
+/* ====== Media Queries  ====== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header nav .bottom-nav #ad-link {
+    font-size: 80%;
+  }
+
+  .most-popular .popular .lg-img {
+    height: 420px;
+  }
+
+  footer .top-footer nav .icons .rss {
+    display: inline-block;
+  }
+
+  footer .top-footer nav {
+    padding: 0;
+  }
 }
