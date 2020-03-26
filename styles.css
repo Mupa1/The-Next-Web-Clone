@@ -754,4 +754,16 @@ footer .bottom-footer .footer-img {
     height: 80px;
     max-width: 106px;
   }
+
+  header nav .bottom-nav {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 120px;
+  }
+
+  header nav .bottom-nav #ad-link {
+    line-height: 30px;
+    text-align: left;
+  }
 }
