@@ -881,6 +881,10 @@ footer .bottom-footer .footer-img {
     grid-template-rows: auto;
   }
 
+  .most-popular .popular .lg-img {
+    height: 265px;
+  }
+
   .latest-deals .deals-box {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -1010,5 +1014,20 @@ footer .bottom-footer .footer-img {
 
   .latest-funding .funding-box .extra-fund {
     display: block;
+  }
+
+  .most-popular {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .most-popular .popular .lg-img {
+    height: 234px;
+  }
+
+  .latest-deals .deals-box {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
   }
 }
