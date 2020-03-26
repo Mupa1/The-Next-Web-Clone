@@ -824,4 +824,21 @@ footer .bottom-footer .footer-img {
     font-size: 170%;
     line-height: 40px;
   }
+
+  .latest-news .news-box {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .latest-news .news-box .news {
+    grid-template-columns: 1fr;
+    grid-template-rows: 157px 1fr;
+    row-gap: 10px;
+  }
+
+  .latest-news .news-box .news .news-img {
+    height: 157px;
+    width: 100%;
+  }
 }
