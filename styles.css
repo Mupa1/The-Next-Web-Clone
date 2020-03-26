@@ -930,6 +930,10 @@ footer .bottom-footer .footer-img {
     font-size: 87%;
   }
 
+  footer {
+    height: 258px;
+  }
+
   footer .top-footer nav {
     width: 400px;
   }
