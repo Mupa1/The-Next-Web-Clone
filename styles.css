@@ -598,6 +598,10 @@ header nav .top-nav .middle-nav {
   background-image: url("https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg");
 }
 
+.latest-deals .deals-box .deal .deals-tags {
+  display: none;
+}
+
 /* Footer Section */
 footer {
   height: 283px;
@@ -840,5 +844,55 @@ footer .bottom-footer .footer-img {
   .latest-news .news-box .news .news-img {
     height: 157px;
     width: 100%;
+  }
+
+  .latest-funding .funding-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .most-popular {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .latest-deals .deals-box {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .latest-deals .deals-box .deal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 171px 1fr;
+    row-gap: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .latest-deals .deals-box .deal .deals-img {
+    height: 171px;
+    width: 100%;
+  }
+
+  .latest-deals .deals-box .deal .deals-tags {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #ffd633;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -39px;
+    right: -9px;
+  }
+
+  .latest-deals .deals-box .deal .deals-tags h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -75px;
+    bottom: -10px;
+    color: #000;
+    font-size: 87%;
   }
 }
