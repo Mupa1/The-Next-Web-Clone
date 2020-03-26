@@ -100,6 +100,10 @@ header nav .bottom-nav #ad-link {
   line-height: 55px;
 }
 
+header nav .extra-links {
+  display: none;
+}
+
 /* Landing Banner Section */
 .landing-banners {
   display: grid;
@@ -700,5 +704,54 @@ footer .bottom-footer .footer-img {
 
   footer .top-footer nav {
     padding: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 110px;
+  }
+
+  header nav .extra-links {
+    display: block;
+    height: 32px;
+    background-color: #000;
+    line-height: 32px;
+    font-size: 88%;
+    padding: 0 7px 0 120px;
+  }
+
+  header nav .extra-links li {
+    display: inline;
+    padding-right: 3px;
+  }
+
+  header nav .extra-links li a {
+    color: gray;
+  }
+
+  header nav .extra-links li a:hover {
+    color: #fff;
+  }
+
+  header nav .extra-links #news-link a {
+    color: #fff;
+  }
+
+  header nav .extra-links li:nth-last-child(-n+4) {
+    float: right;
+    padding: 0 3px;
+  }
+
+  header nav .top-nav div {
+    position: relative;
+  }
+
+  header nav .top-nav div .logo {
+    position: absolute;
+    top: -32px;
+    height: 80px;
+    max-width: 106px;
   }
 }
