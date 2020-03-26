@@ -104,6 +104,10 @@ header nav .extra-links {
   display: none;
 }
 
+header nav .top-nav .middle-nav {
+  display: none;
+}
+
 /* Landing Banner Section */
 .landing-banners {
   display: grid;
@@ -731,8 +735,16 @@ footer .bottom-footer .footer-img {
     color: gray;
   }
 
+  header nav .top-nav .middle-nav a {
+    color: gray;
+  }
+
   header nav .extra-links li a:hover {
     color: #fff;
+  }
+
+  header nav .top-nav .middle-nav a:hover {
+    color: #000;
   }
 
   header nav .extra-links #news-link a {
@@ -765,5 +777,20 @@ footer .bottom-footer .footer-img {
   header nav .bottom-nav #ad-link {
     line-height: 30px;
     text-align: left;
+  }
+
+  header nav .top-nav .middle-nav {
+    display: flex;
+    font-weight: 600;
+    font-size: 90%;
+    padding: 15px 0 0 120px;
+  }
+
+  header nav .top-nav .middle-nav li {
+    padding-right: 20px;
+  }
+
+  header nav .top-nav .top-nav-links .bars {
+    display: none;
   }
 }
