@@ -909,3 +909,22 @@ footer .bottom-footer .footer-img {
     display: inline-block;
   }
 }
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  header nav .top-nav div .logo2 {
+    display: none;
+  }
+
+  header nav .extra-links {
+    padding-left: 20px;
+  }
+
+  header nav .top-nav .middle-nav {
+    padding-left: 20px;
+  }
+
+  header nav .bottom-nav {
+    padding-left: 20px;
+  }
+}
