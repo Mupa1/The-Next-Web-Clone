@@ -67,6 +67,10 @@ header nav .top-nav .logo {
   height: 100%;
 }
 
+header nav .top-nav div .logo2 {
+  display: none;
+}
+
 header nav .top-nav .top-nav-links {
   height: 100%;
   display: flex;
@@ -761,11 +765,17 @@ footer .bottom-footer .footer-img {
   }
 
   header nav .top-nav div .logo {
+    display: none;
+  }
+
+  header nav .top-nav div .logo2 {
+    display: block;
     position: absolute;
     top: -32px;
     height: 80px;
     max-width: 106px;
   }
+
 
   header nav .bottom-nav {
     height: 30px;
