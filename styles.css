@@ -151,6 +151,14 @@ header nav .top-nav .middle-nav {
   padding: 14px 12px;
 }
 
+.landing-banners .banner .banner-caption .landing-logo {
+  display: none;
+}
+
+.landing-banners .banner .banner-caption .date {
+  display: none;
+}
+
 .landing-banners .banner .banner-caption a {
   color: #fff;
 }
@@ -926,5 +934,46 @@ footer .bottom-footer .footer-img {
 
   header nav .bottom-nav {
     padding-left: 20px;
+  }
+
+  .landing-banners .banner1 .banner-caption {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(-10deg, rgba(2, 0, 36, 0.8757878151260504) 50%, rgba(254, 27, 60, 0.5732668067226891) 70%, rgba(254, 226, 229, 0.8337710084033614) 100%);
+    position: relative;
+  }
+
+  .landing-banners .banner .banner-caption h2 {
+    font-size: 150%;
+  }
+
+  .landing-banners .banner1 .banner-caption h2 {
+    font-size: 230%;
+    line-height: 60px;
+  }
+
+  main > div:not(.landing-banners) {
+    max-width: 1152px;
+    margin: auto;
+  }
+
+  .landing-banners .banner .banner-caption .landing-logo {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .landing-banners .banner .banner-caption .landing-logo img {
+    width: 320px;
+  }
+
+  .landing-banners .banner .banner-caption .date {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: -30px;
+    color: #fff;
+    font-size: 70%;
+    z-index: 1;
   }
 }
