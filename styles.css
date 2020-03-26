@@ -895,4 +895,17 @@ footer .bottom-footer .footer-img {
     color: #000;
     font-size: 87%;
   }
+
+  footer .top-footer nav {
+    width: 400px;
+  }
+
+  footer .bottom-footer {
+    height: 97px;
+    padding: 39px 0;
+  }
+
+  footer .bottom-footer p {
+    display: inline-block;
+  }
 }
