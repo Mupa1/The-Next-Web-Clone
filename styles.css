@@ -602,7 +602,10 @@ footer .top-footer {
 footer .top-footer nav {
   width: 320px;
   margin: auto;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .top-footer nav ul {
@@ -610,8 +613,13 @@ footer .top-footer nav ul {
   align-content: space-between;
 }
 
+footer .top-footer nav .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 footer .top-footer nav .icons .icon {
-  flex: 1;
   font-size: 130%;
 }
 
@@ -622,7 +630,7 @@ footer .top-footer nav .icons .rss {
 footer .top-footer nav .other-links {
   width: 85%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
   font-weight: 600;
   font-size: 95%;
@@ -630,6 +638,9 @@ footer .top-footer nav .other-links {
 
 footer .top-footer nav .icons li a .fab,
 footer .top-footer nav .icons li a .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   padding: 8px;
   border: 2px solid #333;
