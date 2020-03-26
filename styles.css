@@ -289,6 +289,10 @@ header nav .top-nav .middle-nav {
   position: relative;
 }
 
+.latest-funding .funding-box .extra-fund {
+  display: none;
+}
+
 .latest-funding .funding-box .fund .fund-title {
   background-color: #f42;
   padding: 6px 6px 6px 84px;
@@ -854,6 +858,20 @@ footer .bottom-footer .footer-img {
     width: 100%;
   }
 
+  .latest-funding .fund-heading-links {
+    font-size: 100%;
+  }
+
+  .latest-funding .fund-heading-links .li-link {
+    display: inline;
+  }
+
+  .latest-funding .fund-heading-links li + li::before {
+    content: "| ";
+    color: #f42;
+    padding: 0 5px;
+  }
+
   .latest-funding .funding-box {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -980,5 +998,17 @@ footer .bottom-footer .footer-img {
   .latest-news .news-box {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
+  }
+
+  .latest-funding .funding-box {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .latest-funding .funding-box h3 .title-link {
+    font-size: 88%;
+  }
+
+  .latest-funding .funding-box .extra-fund {
+    display: block;
   }
 }
