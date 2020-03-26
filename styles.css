@@ -845,12 +845,12 @@ footer .bottom-footer .footer-img {
 
   .latest-news .news-box .news {
     grid-template-columns: 1fr;
-    grid-template-rows: 157px 1fr;
+    grid-template-rows: 120px 1fr;
     row-gap: 10px;
   }
 
   .latest-news .news-box .news .news-img {
-    height: 157px;
+    height: 120px;
     width: 100%;
   }
 
@@ -975,5 +975,10 @@ footer .bottom-footer .footer-img {
     color: #fff;
     font-size: 70%;
     z-index: 1;
+  }
+
+  .latest-news .news-box {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
   }
 }
