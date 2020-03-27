@@ -36,6 +36,14 @@ section {
   color: #f42;
 }
 
+.banner-caption a {
+  color: #fff;
+}
+
+.banner-caption span a {
+  color: gray;
+}
+
 .section-heading a:hover {
   color: #000;
 }
@@ -124,26 +132,26 @@ header {
   padding: 4px;
 }
 
-.landing-banners .banner1 {
+.banner1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/hacker-796x417.png");
 }
 
-.landing-banners .banner2 {
+.banner2 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/amazon-boxes-prime-2017-796x448.jpg");
 }
 
-.landing-banners .banner3 {
+.banner3 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-796x417.png");
 }
 
-.landing-banners .banner {
+.banner {
   background-color: black;
   background-size: cover;
   background-position: 0 -60px;
   margin: 0 4px;
 }
 
-.landing-banners .banner .banner-caption {
+.banner-caption {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -152,33 +160,25 @@ header {
   padding: 14px 12px;
 }
 
-.landing-banners .banner .banner-caption .landing-logo {
+.landing-logo {
   display: none;
 }
 
-.landing-banners .banner .banner-caption .date {
+.banner-caption .date {
   display: none;
 }
 
-.landing-banners .banner .banner-caption a {
-  color: #fff;
-}
-
-.landing-banners .banner h2 {
+.banner h2 {
   font-size: 130%;
 }
 
-.landing-banners .banner span {
+.banner span {
   color: gray;
   font-size: 80%;
 }
 
-.landing-banners .banner span i {
+.banner span i {
   font-size: 120%;
-}
-
-.landing-banners .banner .banner-caption span a {
-  color: gray;
 }
 
 /* Latest News Section */
@@ -823,16 +823,16 @@ footer {
     margin-top: 108px;
   }
 
-  .landing-banners .banner1 {
+  .banner1 {
     grid-row: 1/3;
   }
 
-  .landing-banners .banner1 .banner-caption {
+  .banner1 .banner-caption {
     font-size: 150%;
     line-height: 35px;
   }
 
-  .landing-banners .banner1 .banner-caption h2 {
+  .banner1 .landing-header {
     font-size: 170%;
     line-height: 40px;
   }
@@ -958,17 +958,17 @@ footer {
     padding-left: 20px;
   }
 
-  .landing-banners .banner1 .banner-caption {
+  .banner1 .banner-caption {
     background: rgb(0, 0, 0);
     background: linear-gradient(-10deg, rgba(2, 0, 36, 0.8757878151260504) 50%, rgba(254, 27, 60, 0.5732668067226891) 70%, rgba(254, 226, 229, 0.8337710084033614) 100%);
     position: relative;
   }
 
-  .landing-banners .banner .banner-caption h2 {
+  .landing-header {
     font-size: 150%;
   }
 
-  .landing-banners .banner1 .banner-caption h2 {
+  .banner1 .landing-header {
     font-size: 230%;
     line-height: 60px;
   }
@@ -979,18 +979,18 @@ footer {
     margin: auto;
   }
 
-  .landing-banners .banner .banner-caption .landing-logo {
+  .landing-logo {
     display: block;
     position: absolute;
     top: 15px;
     left: 15px;
   }
 
-  .landing-banners .banner .banner-caption .landing-logo img {
+  .landing-logo img {
     width: 320px;
   }
 
-  .landing-banners .banner .banner-caption .date {
+  .banner-caption .date {
     display: block;
     position: absolute;
     top: 13px;
