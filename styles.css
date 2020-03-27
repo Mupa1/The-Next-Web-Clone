@@ -23,7 +23,8 @@ a {
   color: #555;
 }
 
-main > div:not(.landing-banners) {
+main > div:not(.landing-banners),
+section {
   padding: 0 20px;
 }
 
@@ -981,7 +982,8 @@ footer .bottom-footer .footer-img {
     line-height: 60px;
   }
 
-  main > div:not(.landing-banners) {
+  main > div:not(.landing-banners),
+  section {
     max-width: 1152px;
     margin: auto;
   }
