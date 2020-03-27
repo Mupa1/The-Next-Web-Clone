@@ -620,7 +620,7 @@ footer {
   height: 283px;
 }
 
-footer .top-footer {
+.top-footer {
   height: 161px;
   background-color: #131313;
   text-align: center;
@@ -628,7 +628,7 @@ footer .top-footer {
   line-height: 55px;
 }
 
-footer .top-footer nav {
+.top-footer nav {
   width: 320px;
   margin: auto;
   display: flex;
@@ -637,26 +637,26 @@ footer .top-footer nav {
   justify-content: center;
 }
 
-footer .top-footer nav ul {
+.top-footer nav ul {
   display: flex;
   align-content: space-between;
 }
 
-footer .top-footer nav .icons {
+.icons {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-footer .top-footer nav .icons .icon {
+.icon {
   font-size: 130%;
 }
 
-footer .top-footer nav .icons .rss {
+.rss {
   display: none;
 }
 
-footer .top-footer nav .other-links {
+.other-links {
   width: 85%;
   display: flex;
   justify-content: space-around;
@@ -665,8 +665,8 @@ footer .top-footer nav .other-links {
   font-size: 95%;
 }
 
-footer .top-footer nav .icons li a .fab,
-footer .top-footer nav .icons li a .fas {
+.icons li a .fab,
+.icons li a .fas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -679,21 +679,21 @@ footer .top-footer nav .icons li a .fas {
   height: 40px;
 }
 
-footer .top-footer nav .icons li a:hover .fab,
-footer .top-footer nav .icons li a:hover .fas {
+.icons li a:hover .fab,
+.icons li a:hover .fas {
   background-color: #131313;
   border: 2px solid #333;
 }
 
-footer .top-footer nav .other-links li .links {
+.other-links li .links {
   color: gray;
 }
 
-footer .top-footer nav .other-links li .links:hover {
+.other-links li .links:hover {
   color: #fff;
 }
 
-footer .bottom-footer {
+.bottom-footer {
   height: 122px;
   background-color: #000;
   text-align: center;
@@ -702,11 +702,11 @@ footer .bottom-footer {
   padding: 32px 0;
 }
 
-footer .bottom-footer .heart {
+.heart {
   color: #f42;
 }
 
-footer .bottom-footer .footer-img {
+.footer-img {
   display: inline-block;
   height: 9px;
 }
@@ -723,11 +723,11 @@ footer .bottom-footer .footer-img {
     height: 420px;
   }
 
-  footer .top-footer nav .icons .rss {
+  .rss {
     display: inline-block;
   }
 
-  footer .top-footer nav {
+  .top-footer nav {
     padding: 0;
   }
 }
@@ -930,16 +930,16 @@ footer .bottom-footer .footer-img {
     height: 258px;
   }
 
-  footer .top-footer nav {
+  .top-footer nav {
     width: 400px;
   }
 
-  footer .bottom-footer {
+  .bottom-footer {
     height: 97px;
     padding: 39px 0;
   }
 
-  footer .bottom-footer p {
+  .bottom-footer p {
     display: inline-block;
   }
 }
