@@ -1,0 +1,1046 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: auto;
+  background: #f8f8f8;
+  color: #555;
+}
+
+i {
+  vertical-align: middle;
+}
+
+a {
+  color: #555;
+}
+
+main > div:not(.landing-banners),
+section {
+  padding: 0 20px;
+}
+
+.fa-chevron-right {
+  font-size: 80%;
+}
+
+.section-heading a {
+  color: #f42;
+}
+
+.banner-caption a {
+  color: #fff;
+}
+
+.banner-caption span a {
+  color: gray;
+}
+
+.section-heading a:hover {
+  color: #000;
+}
+
+.blocked-font {
+  font-family: Rajdhani, Arial, Helvetica, sans-serif;
+}
+
+.point-icon::after {
+  content: "\B7";
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  height: 108px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+.top-nav {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo2 {
+  display: none;
+}
+
+.top-nav-links {
+  height: 100%;
+  display: flex;
+}
+
+.top-nav-links li {
+  padding: 0 15px;
+  border-left: 1px solid lightgray;
+  line-height: 48px;
+}
+
+.top-nav-links li a .fa-search {
+  color: lightgray;
+  font-size: 110%;
+}
+
+.fa-bars {
+  color: #f42;
+  font-size: 130%;
+}
+
+.bottom-nav {
+  height: 60px;
+  background-color: #ffd633;
+  text-align: center;
+  line-height: 55px;
+}
+
+.festival {
+  font-size: 70%;
+  color: #000;
+}
+
+.extra-links {
+  display: none;
+}
+
+.middle-nav {
+  display: none;
+}
+
+/* Landing Banner Section */
+.landing-banners {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-top: 78px;
+  row-gap: 8px;
+  min-height: 90vh;
+  padding: 4px;
+}
+
+.banner1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/hacker-796x417.png");
+}
+
+.banner2 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/amazon-boxes-prime-2017-796x448.jpg");
+}
+
+.banner3 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-796x417.png");
+}
+
+.banner {
+  background-color: black;
+  background-size: cover;
+  background-position: 0 -60px;
+  margin: 0 4px;
+}
+
+.banner-caption {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%);
+  padding: 14px 12px;
+}
+
+.landing-logo {
+  display: none;
+}
+
+.banner-caption .date {
+  display: none;
+}
+
+.banner h2 {
+  font-size: 130%;
+}
+
+.banner span {
+  color: gray;
+  font-size: 80%;
+}
+
+.banner span i {
+  font-size: 120%;
+}
+
+/* Latest News Section */
+.latest-news .news-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  row-gap: 12px;
+}
+
+.latest-news .section-heading {
+  padding: 40px 0 20px;
+}
+
+.latest-news .news-box .news {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr;
+  column-gap: 12px;
+}
+
+.latest-news .news-box .news span {
+  font-size: 70%;
+  line-height: 12px;
+  color: gray;
+}
+
+.latest-news .news-box .news span a {
+  color: gray;
+}
+
+.latest-news .news-box .news h4 a {
+  color: #000;
+  font-size: 88%;
+  line-height: 18px;
+}
+
+.latest-news .news-box .news span a:hover {
+  color: #555;
+}
+
+.latest-news .news-box .news h4 a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-news .news-box .news .news-img {
+  height: 72px;
+  width: 72px;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.latest-news .news-box .news .news1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark-516x270.jpg");
+}
+
+.latest-news .news-box .news .news2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/zoom-meeting-419x270.png");
+}
+
+.latest-news .news-box .news .news3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/header-image-iphone-camera-stablisation-516x270.png");
+}
+
+.latest-news .news-box .news .news4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/call-for-code-480x270.jpg");
+}
+
+.latest-news .news-box .news .news5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Coronavirus-Spotify-516x270.jpg");
+}
+
+.latest-news .news-box .news .news6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design34-516x270.png");
+}
+
+.latest-news .news-box .news .news7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/square_logo_uk-516x270.png");
+}
+
+.latest-news .news-box .news .news8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/softbank.jpg");
+}
+
+/* Latest Funding Section */
+.latest-funding {
+  line-height: 30px;
+}
+
+.latest-funding .funding-header {
+  margin: 50px 0 20px;
+}
+
+.latest-funding .fund-heading-links {
+  font-size: 80%;
+}
+
+.latest-funding .funding-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
+}
+
+.latest-funding .funding-box .fund {
+  position: relative;
+}
+
+.latest-funding .funding-box .extra-fund {
+  display: none;
+}
+
+.latest-funding .funding-box .fund .fund-title {
+  background-color: #f42;
+  padding: 6px 6px 6px 84px;
+  color: #fff;
+}
+
+.latest-funding .funding-box .fund .fund-title .title-link {
+  color: #fff;
+}
+
+.latest-funding .funding-box .fund img {
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.latest-funding .funding-box .fund .box1 {
+  padding: 10px 16px 10px 84px;
+  line-height: 20px;
+  background: rgba(255, 68, 34, 0.08);
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box1 h3 a {
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box1 h5 a {
+  color: gray;
+}
+
+.latest-funding .funding-box .fund .box2 {
+  padding: 11px 16px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  background-color: rgba(255, 68, 34, 0.02);
+  font-size: 80%;
+}
+
+.latest-funding .funding-box .fund .box2 i {
+  color: #000;
+  padding-right: 20px;
+}
+
+.latest-funding .funding-box .fund .box2 a:hover {
+  color: #000;
+}
+
+.latest-funding .funding-box .fund .box3 {
+  padding: 10px 16px 16px;
+  background-color: rgba(255, 68, 34, 0.02);
+  font-size: 75%;
+  line-height: 20px;
+}
+
+.latest-funding .funding-box .fund .box3 span {
+  color: gray;
+}
+
+/* Most Popular Section */
+.most-popular {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.lg-img {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  display: block;
+  width: 100%;
+  height: 210px;
+  margin: 10px auto;
+  margin-bottom: 2px;
+}
+
+.lg-img-caption {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%);
+  padding: 14px 12px;
+  line-height: 24px;
+}
+
+.white {
+  color: #fff;
+}
+
+.name-time {
+  font-size: 80%;
+  color: gray;
+}
+
+.lg-img-header {
+  font-size: 120%;
+}
+
+.white:hover {
+  text-decoration: underline;
+}
+
+.name {
+  color: gray;
+}
+
+.name:hover {
+  color: #fff;
+}
+
+.latest-box {
+  line-height: 20px;
+  padding-left: 14px;
+  display: flex;
+  max-height: 95px;
+  overflow: hidden;
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.title-latest {
+  color: #f42;
+  padding-top: 10px;
+}
+
+.details {
+  color: #f42;
+  font-size: 90%;
+}
+
+.details:hover {
+  text-decoration: underline;
+}
+
+.sml-img {
+  height: 96px;
+  width: 96px;
+  background-color: #000;
+  background-size: cover;
+  flex: 0 0 96px;
+}
+
+.apps {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-368x276.jpg");
+}
+
+.apps-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Smithsonian.jpg");
+}
+
+.gear {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/fujifilm-x-t4-camera-mirrorless-368x276.jpg");
+}
+
+.gear-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2014/07/Wifi-730x279.jpg");
+}
+
+.tech {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/lab-mouse-368x276.jpg");
+}
+
+.tech-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/farmers-market-1329008_1280.jpg");
+}
+
+.creative {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg");
+}
+
+.creative-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04.png");
+}
+
+.podium {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/ai-ownership-368x276.png");
+}
+
+.podium-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/big_survival_base_3.png");
+}
+
+.insight {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
+}
+
+.insight-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/vp01-2_gliding_home.jpg");
+}
+
+.launch {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
+}
+
+.launch-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed.jpg");
+}
+
+.distract {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
+}
+
+.distract-sml {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Giphy_Jif-Featured.jpg");
+}
+
+.popular-list li {
+  margin-left: 16px;
+  padding: 5px 0;
+  font-size: 85%;
+  border-bottom: 1px solid #ccc;
+}
+
+.popular-list li::before {
+  color: #f42;
+  content: "\2022";
+  font-size: 120%;
+  margin: auto 10px auto -16px;
+}
+
+.item:hover {
+  color: #000;
+}
+
+/* Latest Deals Section */
+.latest-deals {
+  margin-bottom: 60px;
+}
+
+.latest-deals .deals-heading {
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 20px;
+}
+
+.latest-deals .deals-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+  row-gap: 12px;
+}
+
+.latest-deals .deals-box .deal {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr;
+  column-gap: 12px;
+  font-size: 88%;
+}
+
+.latest-deals .deals-box .deal .deals-img {
+  height: 72px;
+  width: 72px;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.latest-deals .deals-box .deal .before {
+  font-size: 80%;
+  line-height: 12px;
+  text-decoration: line-through;
+  color: gray;
+  padding-right: 5px;
+}
+
+.latest-deals .deals-box .deal h4 .dl-title {
+  color: #000;
+  line-height: 18px;
+}
+
+.latest-deals .deals-box .deal h4 .dl-title:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-deals .deals-box .deal .deal1 {
+  background-image: url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal2 {
+  background-image: url("https://cdnp2.stackassets.com/734245696d515938336d4ed978c1d5008666529d/store/7cbb8a352220f9569bdd3aebebb3b76fdaa11906cdb4e3f6a04dd785563a/sale_26800_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal3 {
+  background-image: url("https://cdnp1.stackassets.com/ddf20cae6886e8f23a85be01f07bd91fd309b7bb/store/8308acd7a83352a93f71c7b45e3f7022b4613cc6ec61ccb957d08ed98061/sale_26369_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal4 {
+  background-image: url("https://cdnp3.stackassets.com/f54c9185d68a19989ac1618bb5f955852e40ea0e/store/988cf18b55dc05a3eca624beef4de98a661b6f75463223a0c57759f988b1/sale_23318_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal5 {
+  background-image: url("https://cdnp2.stackassets.com/8d8976fed5843bfc6f439d99ea351eaeeed9cd34/store/da8586da0d4787dcc0e939431c2c797a5dd506f99f62473b0fa46e23539e/sale_26720_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal6 {
+  background-image: url("https://cdnp1.stackassets.com/80c619e01841705c913719fbeb2a7d59d0b06b74/store/8b2bffd1fff65448a1d281f7ae49c6b6dfa3395ebe7d0789ec06e927b70f/sale_26679_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal7 {
+  background-image: url("https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deal8 {
+  background-image: url("https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg");
+}
+
+.latest-deals .deals-box .deal .deals-tags {
+  display: none;
+}
+
+/* Footer Section */
+footer {
+  height: 283px;
+}
+
+.top-footer {
+  height: 161px;
+  background-color: #131313;
+  text-align: center;
+  padding: 35px 0;
+  line-height: 55px;
+}
+
+.top-footer nav {
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-footer nav ul {
+  display: flex;
+  align-content: space-between;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.icon {
+  font-size: 130%;
+}
+
+.rss {
+  display: none;
+}
+
+.other-links {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  font-weight: 600;
+  font-size: 95%;
+}
+
+.icons li a .fab,
+.icons li a .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #333;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.icons li a:hover .fab,
+.icons li a:hover .fas {
+  background-color: #131313;
+  border: 2px solid #333;
+}
+
+.other-links li .links {
+  color: gray;
+}
+
+.other-links li .links:hover {
+  color: #fff;
+}
+
+.bottom-footer {
+  height: 122px;
+  background-color: #000;
+  text-align: center;
+  color: gray;
+  font-size: 82%;
+  padding: 32px 0;
+}
+
+.heart {
+  color: #f42;
+}
+
+.footer-img {
+  display: inline-block;
+  height: 9px;
+}
+
+/* ====== Media Queries  ====== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .festival {
+    font-size: 80%;
+  }
+
+  .lg-img {
+    height: 420px;
+  }
+
+  .rss {
+    display: inline-block;
+  }
+
+  .top-footer nav {
+    padding: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 110px;
+  }
+
+  .extra-links {
+    display: block;
+    height: 32px;
+    background-color: #000;
+    line-height: 32px;
+    font-size: 88%;
+    padding: 0 7px 0 120px;
+  }
+
+  .middle-nav a {
+    color: gray;
+  }
+
+  .extra-links li {
+    display: inline;
+    padding-right: 3px;
+  }
+
+  .extra-links li a {
+    color: gray;
+  }
+
+  .middle-nav a:hover {
+    color: #000;
+  }
+
+  .extra-links li a:hover {
+    color: #fff;
+  }
+
+  #news-link {
+    color: #fff;
+  }
+
+  .middle-nav li {
+    padding-right: 20px;
+  }
+
+  .extra-links li:nth-last-child(-n+4) {
+    float: right;
+    padding: 0 3px;
+  }
+
+  .mid-nav-box {
+    position: relative;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    position: absolute;
+    top: -32px;
+    height: 80px;
+    max-width: 106px;
+  }
+
+  .bottom-nav {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 120px;
+  }
+
+  .middle-nav {
+    display: flex;
+    font-weight: 600;
+    font-size: 90%;
+    padding: 15px 0 0 120px;
+  }
+
+  .last-links {
+    display: none;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .landing-banners {
+    min-height: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 250px;
+    grid-auto-rows: minmax(250px, auto);
+    margin-top: 108px;
+  }
+
+  .banner1 {
+    grid-row: 1/3;
+  }
+
+  .banner1 .banner-caption {
+    font-size: 150%;
+    line-height: 35px;
+  }
+
+  .banner1 .landing-header {
+    font-size: 170%;
+    line-height: 40px;
+  }
+
+  .latest-news .news-box {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .latest-news .news-box .news {
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+    row-gap: 10px;
+  }
+
+  .latest-news .news-box .news .news-img {
+    height: 120px;
+    width: 100%;
+  }
+
+  .latest-funding .fund-heading-links {
+    font-size: 100%;
+  }
+
+  .latest-funding .fund-heading-links .li-link {
+    display: inline;
+  }
+
+  .latest-funding .fund-heading-links li + li::before {
+    content: "| ";
+    color: #f42;
+    padding: 0 5px;
+  }
+
+  .latest-funding .funding-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .most-popular {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .lg-img {
+    height: 265px;
+  }
+
+  .latest-deals .deals-box {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .latest-deals .deals-box .deal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 171px 1fr;
+    row-gap: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .latest-deals .deals-box .deal .deals-img {
+    height: 171px;
+    width: 100%;
+  }
+
+  .latest-deals .deals-box .deal .deals-tags {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #ffd633;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -39px;
+    right: -9px;
+  }
+
+  .latest-deals .deals-box .deal .deals-tags h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -75px;
+    bottom: -10px;
+    color: #000;
+    font-size: 87%;
+  }
+
+  footer {
+    height: 258px;
+  }
+
+  .top-footer nav {
+    width: 400px;
+  }
+
+  .bottom-footer {
+    height: 97px;
+    padding: 39px 0;
+  }
+
+  .bottom-footer p {
+    display: inline-block;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .logo2 {
+    display: none;
+  }
+
+  .extra-links {
+    padding-left: 20px;
+  }
+
+  .middle-nav {
+    padding-left: 20px;
+  }
+
+  .bottom-nav {
+    padding-left: 20px;
+  }
+
+  .banner1 .banner-caption {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(-10deg, rgba(2, 0, 36, 0.8757878151260504) 50%, rgba(254, 27, 60, 0.5732668067226891) 70%, rgba(254, 226, 229, 0.8337710084033614) 100%);
+    position: relative;
+  }
+
+  .landing-header {
+    font-size: 150%;
+  }
+
+  .banner1 .landing-header {
+    font-size: 230%;
+    line-height: 60px;
+  }
+
+  main > div:not(.landing-banners),
+  section {
+    max-width: 1152px;
+    margin: auto;
+  }
+
+  .landing-logo {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .landing-logo img {
+    width: 320px;
+  }
+
+  .banner-caption .date {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    color: #fff;
+    font-size: 70%;
+    z-index: 1;
+  }
+
+  .latest-news .news-box {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .latest-funding .funding-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .latest-funding .funding-box {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .latest-funding .funding-box h3 .title-link {
+    font-size: 88%;
+  }
+
+  .latest-funding .funding-box .extra-fund {
+    display: block;
+  }
+
+  .most-popular {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .lg-img {
+    height: 234px;
+  }
+
+  .latest-deals .deals-box {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 50px;
+  }
+}
+
+/* Large devices (1214px and up) */
+@media only screen and (min-width: 1214px) {
+  .last-links {
+    display: inline;
+  }
+}
