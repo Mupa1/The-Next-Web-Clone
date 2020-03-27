@@ -362,7 +362,7 @@ header {
   margin-top: 30px;
 }
 
-.most-popular .popular .lg-img {
+.lg-img {
   background-color: #000;
   background-size: cover;
   background-position: 50%;
@@ -373,7 +373,7 @@ header {
   margin-bottom: 2px;
 }
 
-.most-popular .popular .lg-img-caption {
+.lg-img-caption {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -383,36 +383,32 @@ header {
   line-height: 24px;
 }
 
-.most-popular .popular .lg-img-caption .white {
+.white {
   color: #fff;
 }
 
-.most-popular .popular .lg-img-caption .name-time {
+.name-time {
   font-size: 80%;
   color: gray;
 }
 
-.most-popular .popular .lg-img-caption h2 {
+.lg-img-header {
   font-size: 120%;
 }
 
-.most-popular .popular .lg-img-caption h2 .white:hover {
+.white:hover {
   text-decoration: underline;
 }
 
-.most-popular .popular .lg-img-caption span .name:hover {
-  color: #fff;
-}
-
-.most-popular .popular .lg-img .lg-img-caption span .name {
+.name {
   color: gray;
 }
 
-.most-popular .popular .lg-img .lg-img-caption span .name:hover {
+.name:hover {
   color: #fff;
 }
 
-.most-popular .latest-box {
+.latest-box {
   line-height: 20px;
   padding-left: 14px;
   display: flex;
@@ -421,21 +417,21 @@ header {
   background-color: rgba(255, 68, 34, 0.08);
 }
 
-.most-popular .latest-box h5 {
+.title-latest {
   color: #f42;
   padding-top: 10px;
 }
 
-.most-popular .latest-box h4 .details {
+.details {
   color: #f42;
   font-size: 90%;
 }
 
-.most-popular .latest-box h4 .details:hover {
+.details:hover {
   text-decoration: underline;
 }
 
-.most-popular .popular .sml-img {
+.sml-img {
   height: 96px;
   width: 96px;
   background-color: #000;
@@ -443,85 +439,85 @@ header {
   flex: 0 0 96px;
 }
 
-.most-popular .popular .apps {
+.apps {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-368x276.jpg");
 }
 
-.most-popular .popular .apps-sml {
+.apps-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Smithsonian.jpg");
 }
 
-.most-popular .popular .gear {
+.gear {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/fujifilm-x-t4-camera-mirrorless-368x276.jpg");
 }
 
-.most-popular .popular .gear-sml {
+.gear-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2014/07/Wifi-730x279.jpg");
 }
 
-.most-popular .popular .tech {
+.tech {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/lab-mouse-368x276.jpg");
 }
 
-.most-popular .popular .tech-sml {
+.tech-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/farmers-market-1329008_1280.jpg");
 }
 
-.most-popular .popular .creative {
+.creative {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg");
 }
 
-.most-popular .popular .creative-sml {
+.creative-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04.png");
 }
 
-.most-popular .popular .podium {
+.podium {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/ai-ownership-368x276.png");
 }
 
-.most-popular .popular .podium-sml {
+.podium-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/big_survival_base_3.png");
 }
 
-.most-popular .popular .insight {
+.insight {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
 }
 
-.most-popular .popular .insight-sml {
+.insight-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/vp01-2_gliding_home.jpg");
 }
 
-.most-popular .popular .launch {
+.launch {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
 }
 
-.most-popular .popular .launch-sml {
+.launch-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed.jpg");
 }
 
-.most-popular .popular .distract {
+.distract {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/07/robots-368x276.jpg");
 }
 
-.most-popular .popular .distract-sml {
+.distract-sml {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Giphy_Jif-Featured.jpg");
 }
 
-.most-popular .popular .popular-list li {
+.popular-list li {
   margin-left: 16px;
   padding: 5px 0;
   font-size: 85%;
   border-bottom: 1px solid #ccc;
 }
 
-.most-popular .popular .popular-list li::before {
+.popular-list li::before {
   color: #f42;
   content: "\2022";
   font-size: 120%;
   margin: auto 10px auto -16px;
 }
 
-.most-popular .popular .popular-list .item:hover {
+.item:hover {
   color: #000;
 }
 
@@ -719,7 +715,7 @@ footer {
     font-size: 80%;
   }
 
-  .most-popular .popular .lg-img {
+  .lg-img {
     height: 420px;
   }
 
@@ -881,7 +877,7 @@ footer {
     grid-template-rows: auto;
   }
 
-  .most-popular .popular .lg-img {
+  .lg-img {
     height: 265px;
   }
 
@@ -1031,7 +1027,7 @@ footer {
     grid-template-rows: auto;
   }
 
-  .most-popular .popular .lg-img {
+  .lg-img {
     height: 234px;
   }
 
