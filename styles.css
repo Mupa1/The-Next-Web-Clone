@@ -57,59 +57,59 @@ header {
   top: 0;
 }
 
-header nav .top-nav {
+.top-nav {
   height: 48px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
 }
 
-header nav .top-nav .logo {
+.logo {
   height: 100%;
 }
 
-header nav .top-nav div .logo2 {
+.logo2 {
   display: none;
 }
 
-header nav .top-nav .top-nav-links {
+.top-nav-links {
   height: 100%;
   display: flex;
 }
 
-header nav .top-nav .top-nav-links li {
+.top-nav-links li {
   padding: 0 15px;
   border-left: 1px solid lightgray;
   line-height: 48px;
 }
 
-header nav .top-nav .top-nav-links li a .fa-search {
+.top-nav-links li a .fa-search {
   color: lightgray;
   font-size: 110%;
 }
 
-header nav .top-nav .top-nav-links li a .fa-bars {
+.fa-bars {
   color: #f42;
   font-size: 130%;
 }
 
-header nav .bottom-nav {
+.bottom-nav {
   height: 60px;
   background-color: #ffd633;
   text-align: center;
-}
-
-header nav .bottom-nav #ad-link {
-  font-size: 70%;
-  color: #000;
   line-height: 55px;
 }
 
-header nav .extra-links {
+.festival {
+  font-size: 70%;
+  color: #000;
+}
+
+.extra-links {
   display: none;
 }
 
-header nav .top-nav .middle-nav {
+.middle-nav {
   display: none;
 }
 
@@ -715,7 +715,7 @@ footer .bottom-footer .footer-img {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  header nav .bottom-nav #ad-link {
+  .festival {
     font-size: 80%;
   }
 
@@ -738,7 +738,7 @@ footer .bottom-footer .footer-img {
     height: 110px;
   }
 
-  header nav .extra-links {
+  .extra-links {
     display: block;
     height: 32px;
     background-color: #000;
@@ -747,45 +747,49 @@ footer .bottom-footer .footer-img {
     padding: 0 7px 0 120px;
   }
 
-  header nav .extra-links li {
+  .middle-nav a {
+    color: gray;
+  }
+
+  .extra-links li {
     display: inline;
     padding-right: 3px;
   }
 
-  header nav .extra-links li a {
+  .extra-links li a {
     color: gray;
   }
 
-  header nav .top-nav .middle-nav a {
-    color: gray;
-  }
-
-  header nav .extra-links li a:hover {
-    color: #fff;
-  }
-
-  header nav .top-nav .middle-nav a:hover {
+  .middle-nav a:hover {
     color: #000;
   }
 
-  header nav .extra-links #news-link a {
+  .extra-links li a:hover {
     color: #fff;
   }
 
-  header nav .extra-links li:nth-last-child(-n+4) {
+  #news-link {
+    color: #fff;
+  }
+
+  .middle-nav li {
+    padding-right: 20px;
+  }
+
+  .extra-links li:nth-last-child(-n+4) {
     float: right;
     padding: 0 3px;
   }
 
-  header nav .top-nav div {
+  .mid-nav-box {
     position: relative;
   }
 
-  header nav .top-nav div .logo {
+  .logo {
     display: none;
   }
 
-  header nav .top-nav div .logo2 {
+  .logo2 {
     display: block;
     position: absolute;
     top: -32px;
@@ -793,34 +797,25 @@ footer .bottom-footer .footer-img {
     max-width: 106px;
   }
 
-  header nav .bottom-nav {
+  .bottom-nav {
     height: 30px;
     line-height: 30px;
     text-align: left;
     padding-left: 120px;
   }
 
-  header nav .bottom-nav #ad-link {
-    line-height: 30px;
-    text-align: left;
-  }
-
-  header nav .top-nav .middle-nav {
+  .middle-nav {
     display: flex;
     font-weight: 600;
     font-size: 90%;
     padding: 15px 0 0 120px;
   }
 
-  header nav .top-nav .middle-nav li {
-    padding-right: 20px;
-  }
-
-  header nav .top-nav .middle-nav li:nth-last-child(-n+2) {
+  .last-links {
     display: none;
   }
 
-  header nav .top-nav .top-nav-links .bars {
+  .bars {
     display: none;
   }
 
@@ -951,19 +946,19 @@ footer .bottom-footer .footer-img {
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
-  header nav .top-nav div .logo2 {
+  .logo2 {
     display: none;
   }
 
-  header nav .extra-links {
+  .extra-links {
     padding-left: 20px;
   }
 
-  header nav .top-nav .middle-nav {
+  .middle-nav {
     padding-left: 20px;
   }
 
-  header nav .bottom-nav {
+  .bottom-nav {
     padding-left: 20px;
   }
 
@@ -1049,7 +1044,7 @@ footer .bottom-footer .footer-img {
 
 /* Large devices (1214px and up) */
 @media only screen and (min-width: 1214px) {
-  header nav .top-nav .middle-nav li:nth-last-child(-n+2) {
+  .last-links {
     display: inline;
   }
 }
